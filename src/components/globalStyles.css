@@ -218,6 +218,7 @@ blockquote {
   transition: all 0.2s ease;
   cursor: pointer;
   border-radius: var(--borderRadius);
+  width: 100%;
 }
 .Button:hover,
 .Button:focus {
