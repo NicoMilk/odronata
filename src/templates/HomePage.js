@@ -44,36 +44,33 @@ export const HomePageTemplate = ({
   }) => (
   <main className="Home">
 
+    {/* Temporaire pour Work In Progress */}
+    <div className="ImageGrid">
+      <div className="ImageWorkInProgress">
+      </div>
+      <div className="ImageWorkInProgress">
+        <Image src={'https://ucarecdn.com/7b68d4dd-5538-49c9-876a-76e2894552df/-/resize/1000x/'} lazy={false} alt={'Logo Odronata'} />
+      </div>
+      <div className="Work2">
+        <a href="mailto:contact@odronata.com">contact@odronata.com</a>
+      </div>
+    </div>
+    {/* Fin temporaire */}
+
+    {/* Temporaire : A decommenter après Work In Progress */}
     {/* <section className="BackgroundVideo-section section">
       <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
-    </section> */}
-{/* 
-    <PageHeader
-      large
-      title={title}
-      subtitle={subtitle}
-      backgroundImage={featuredImage}
-    /> */}
+    </section>
 
     <section className="section">
       <div className="container">
-        {/* <Content source={body} /> */}
-
-        {/* Temporaire pour Work In Progress */}
-        <div className="Work">
-          {/* <Image src={'https://ucarecdn.com/7b68d4dd-5538-49c9-876a-76e2894552df/'} alt={'Logo Odronata'} /> */}
-          <img src="/images/Logo_full_DEF.png" width="800px" />
-          <div className="Work2">
-            <h3><a href="mailto:contact@odronata.com">contact@odronata.com</a></h3>
-          </div>
-        </div>
-        {/* Fin temporaire */}
+        <Content source={body} /> 
       </div>
     </section>
 
-    {/* <ImageParallax image={parallax1} title={title1}/>
+    <ImageParallax image={parallax1} title={title1}/>
 
     <section className="section">
       <div className="container">
@@ -128,6 +125,7 @@ export const HomePageTemplate = ({
         <Content source={section7} />
       </div>
     </section> */}
+    {/* Fin Temporaire : A decommenter après Work In Progress */}
 
   </main>
 )

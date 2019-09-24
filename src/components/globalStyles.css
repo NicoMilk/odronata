@@ -250,6 +250,20 @@ blockquote {
   text-align: center;
 }
 
-.Work2 {
-  margin-top: 80px;
+.ImageGrid {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
 }
+
+.ImageWorkInProgress {
+  width: 100%;
+  text-align: center;
+}
+
+.Work2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
