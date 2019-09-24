@@ -5,7 +5,7 @@ title: Odronata
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
 video: 'https://ucarecdn.com/9b5d2531-7919-4a0a-816e-24ea85cc960a/'
 videoPoster: 'https://ucarecdn.com/6a35fe34-ae7a-4997-9f67-e793e763fd75/'
-videoTitle: Odronata
+videoTitle: 'Odronata'
 parallax1: 'https://ucarecdn.com/49bebd54-d3ed-4524-81f7-620a6b09185a/'
 title1: 'Prises de vues'
 parallax2: 'https://ucarecdn.com/b731c1d9-6742-48f8-aba4-a618d9f258e1/'
