@@ -6,6 +6,8 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import ImageParallax from '../components/ImageParallax'
 import BackgroundVideo from '../components/BackgroundVideo'
+import Image from '../components/Image'
+
 // import PostCard from '../components/PostCard'
 import './HomePage.css'
 
@@ -42,11 +44,11 @@ export const HomePageTemplate = ({
   }) => (
   <main className="Home">
 
-    <section className="BackgroundVideo-section section">
+    {/* <section className="BackgroundVideo-section section">
       <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
-    </section>
+    </section> */}
 {/* 
     <PageHeader
       large
@@ -57,11 +59,21 @@ export const HomePageTemplate = ({
 
     <section className="section">
       <div className="container">
-        <Content source={body} />
+        {/* <Content source={body} /> */}
+
+        {/* Temporaire pour Work In Progress */}
+        <div className="Work">
+          {/* <Image src={'https://ucarecdn.com/7b68d4dd-5538-49c9-876a-76e2894552df/'} alt={'Logo Odronata'} /> */}
+          <img src="/images/Logo_full_DEF.png" width="800px" />
+          <div className="Work2">
+            <h3><a href="mailto:contact@odronata.com">contact@odronata.com</a></h3>
+          </div>
+        </div>
+        {/* Fin temporaire */}
       </div>
     </section>
 
-    <ImageParallax image={parallax1} title={title1}/>
+    {/* <ImageParallax image={parallax1} title={title1}/>
 
     <section className="section">
       <div className="container">
@@ -115,7 +127,7 @@ export const HomePageTemplate = ({
       <div className="container">
         <Content source={section7} />
       </div>
-    </section>
+    </section> */}
 
   </main>
 )
