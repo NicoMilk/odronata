@@ -126,10 +126,11 @@
 }
 
 .Form--Alert {
-  background: var(--lightGrey);
+  background: var(--odronataDark);
   width: 100%;
   text-align: center;
   padding: 2rem;
+  color: var(--primary);
 }
 
 .Form--Input-honey {
