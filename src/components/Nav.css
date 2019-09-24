@@ -32,6 +32,7 @@
 
 .Nav--MenuButton {
   display: none !important;
+  color: var(--primary);
 }
 
 .NavLink {
@@ -80,7 +81,8 @@
   top: 100%;
   left: 0;
   width: auto;
-  background: white;
+  /* background: white; */
+  background: #16161D;
   /* opacity: 0; */
   max-height: 0;
   overflow: hidden;
@@ -128,7 +130,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    /* background: white; */
+    background: #16161D;
     animation: Nav--Links 0.2s ease;
   }
 
