@@ -57,6 +57,7 @@
   width: 100%;
   transition: 0.3s ease all;
   background: transparent;
+  color: var(--lightGrey);
 }
 
 .Form--InputText:valid,

@@ -1,6 +1,7 @@
 .footer {
   padding: 2rem 0;
-  background: var(--lightGrey);
+  background: var(--odronataDark);
+  color: var(--primary);
   font-size: 1.2rem;
 }
 

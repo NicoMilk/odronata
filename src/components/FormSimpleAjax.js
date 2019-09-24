@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Helmet from 'react-helmet'
+// import Helmet from 'react-helmet'
 import { stringify } from 'qs'
 import { serialize } from 'dom-form-serializer'
 
@@ -10,9 +10,9 @@ class Form extends React.Component {
     name: 'Simple Form Ajax',
     subject: '', // optional subject of the notification email
     action: '',
-    successMessage: 'Thanks for your enquiry, we will get back to you soon',
+    successMessage: 'Merci pour votre message. Je reviens vers vous rapidement.',
     errorMessage:
-      'There is a problem, your message has not been sent, please try contacting us via email'
+      'Suite à un problème technique votre message n\'a pas pu être envoyé. Merci de m\'envoyer un email en direct'
   }
 
   state = {
@@ -34,7 +34,7 @@ class Form extends React.Component {
         if (res.ok) {
           return res
         } else {
-          throw new Error('Network error')
+          throw new Error('Erreur réseau')
         }
       })
       .then(() => {
@@ -58,16 +58,16 @@ class Form extends React.Component {
 
     return (
       <Fragment>
-        <Helmet>
+        {/* <Helmet>
           <script src="https://www.google.com/recaptcha/api.js" />
-        </Helmet>
+        </Helmet> */}
         <form
           className="Form"
           name={name}
           action={action}
           onSubmit={this.handleSubmit}
-          data-netlify=""
-          netlify-recaptcha=""
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
         >
           {this.state.alert && (
             <div className="Form--Alert">{this.state.alert}</div>
@@ -81,7 +81,7 @@ class Form extends React.Component {
                 name="firstname"
                 required
               />
-              <span>Firstname</span>
+              <span>Prénom</span>
             </label>
             <label className="Form--Label">
               <input
@@ -91,30 +91,19 @@ class Form extends React.Component {
                 name="lastname"
                 required
               />
-              <span>Lastname</span>
+              <span>Nom</span>
             </label>
           </div>
-          <fieldset>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="male"
-                defaultChecked
-              />
-              <span>Male</span>
-            </label>
-            <label className="Form--Label Form--Radio">
-              <input
-                className="Form--RadioInput"
-                type="radio"
-                name="gender"
-                value="female"
-              />
-              <span>Female</span>
-            </label>
-          </fieldset>
+          <label className="Form--Label">
+            <input
+              className="Form--Input Form--InputText"
+              type="text"
+              placeholder="Téléphone"
+              name="phone"
+              required
+            />
+            <span>Téléphone</span>
+          </label>
           <label className="Form--Label">
             <input
               className="Form--Input Form--InputText"
@@ -123,7 +112,7 @@ class Form extends React.Component {
               name="emailAddress"
               required
             />
-            <span>Email address</span>
+            <span>Email</span>
           </label>
           <label className="Form--Label has-arrow">
             <select
@@ -133,11 +122,10 @@ class Form extends React.Component {
               required
             >
               <option disabled hidden>
-                Type of Enquiry
+                Votre demande
               </option>
-              <option>Need to know more</option>
-              <option>Found a bug</option>
-              <option>Want to say hello</option>
+              <option>Besoin d'informations</option>
+              <option>Prise de contact</option>
             </select>
           </label>
           <label className="Form--Label">
@@ -150,24 +138,13 @@ class Form extends React.Component {
             />
             <span>Message</span>
           </label>
-          <label className="Form--Label Form-Checkbox">
-            <input
-              className="Form--Input Form--Textarea Form--CheckboxInput"
-              name="newsletter"
-              type="checkbox"
-            />
-            <span>Get news updates</span>
-          </label>
-          <div
-            className="g-recaptcha"
-            data-sitekey="6LfKN3kUAAAAAGIM1CbXmaRZx3LIh_W2twn1tzkA"
-          />
+        
           {!!subject && <input type="hidden" name="subject" value={subject} />}
           <input type="hidden" name="form-name" value={name} />
           <input
             className="Button Form--SubmitButton"
             type="submit"
-            value="Enquire"
+            value="Valider"
             disabled={this.state.disabled}
           />
         </form>
