@@ -40,7 +40,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Vidéo accueil titre, name: videoTitle, widget: string }
           - { label: Vidéo accueil, name: video, widget: file }
           - { label: Vidéo snapshot, name: videoPoster, widget: image }
-          - { label: Body, name: body, widget: markdown }
+          - { label: Texte intro, name: body, widget: markdown }
           - { label: Titre section 1, name: title1, widget: string }
           - { label: Image parallax 1, name: parallax1, widget: image }
           - { label: Texte section 1, name: section1, widget: markdown }
@@ -74,10 +74,29 @@ collections: # A list of collections the CMS should be able to edit
               default: DefaultPage,
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
-          - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Titre, name: title, widget: string }
+          - { label: Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: hidden }
-          - { label: Body, name: body, widget: markdown }
+          - { label: Texte, name: body, widget: markdown }
+      
+      - file: 'content/pages/legislation.md'
+        label: 'Législation'
+        name: 'legislation-page'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: DefaultPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Titre, name: title, widget: string }
+          - { label: Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: hidden }
+          - { label: Texte section 1, name: section1, widget: markdown }
+          - { label: Texte section 2, name: section2, widget: markdown }
+          - { label: Texte section 3, name: section3, widget: markdown }
+          - { label: Texte section 4, name: section4, widget: markdown }
           
       - file: 'content/pages/contact.md'
         label: 'Contact Page'
