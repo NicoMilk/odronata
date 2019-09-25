@@ -77,12 +77,12 @@ export default ({ children, meta, title }) => {
             {/* <GithubCorner url="https://github.com/thriveweb/yellowcake" /> */}
 
             {/* Temporaire : A decommenter après fin WorkInProgress */}
-            <Nav subNav={subNav} />
+            {/* <Nav subNav={subNav} /> */}
 
             <Fragment>{children}</Fragment>
 
             {/* Temporaire : A decommenter après fin WorkInProgress */}
-            <Footer />
+            {/* <Footer /> */}
           </Fragment>
         )
       }}

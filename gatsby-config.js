@@ -42,6 +42,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'fr'
+      }
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: 'odronata',
