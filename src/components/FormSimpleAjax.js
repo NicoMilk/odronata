@@ -100,7 +100,6 @@ class Form extends React.Component {
               type="text"
               placeholder="Téléphone"
               name="phone"
-              required
             />
             <span>Téléphone</span>
           </label>

@@ -1,8 +1,8 @@
 ---
 template: HomePage
 slug: ''
-title: Odronata
-featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
+title: ''
+featuredImage: ''
 video: 'https://ucarecdn.com/9b5d2531-7919-4a0a-816e-24ea85cc960a/'
 videoPoster: 'https://ucarecdn.com/6a35fe34-ae7a-4997-9f67-e793e763fd75/'
 videoTitle: 'Odronata'
@@ -20,7 +20,7 @@ parallax6: 'https://ucarecdn.com/421b6ac9-0068-4134-891b-f9f2ac22bcdf/'
 title6: 'Médias'
 parallax7: 'https://ucarecdn.com/5d0cb7b7-90d2-4049-91ba-45b53b02359e/'
 title7: 'Matériel'
-subtitle: 'Drone Application(s)'
+subtitle: ''
 section1: >-
   A sem vel nec sodales mi vivamus senectus sed potenti a parturient nascetur
   tincidunt nisi pulvinar rhoncus a. Risus imperdiet taciti suspendisse facilisi
@@ -51,8 +51,4 @@ meta:
   description: Odronata - Drone Application(s)
   title: Odronata - Drone Application(s)
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices purus. Donec elementum, nisi at feugiat efficitur, odio ex rhoncus sapien, eu tristique turpis dolor sit amet dolor. Vivamus ut nisl in turpis consectetur blandit non eget dui. Aliquam porttitor orci eu felis ullamcorper facilisis. Sed fermentum vehicula lorem, quis varius nunc facilisis nec. Sed massa leo, rutrum in nulla quis, aliquet aliquam leo. Vivamus eu est ac felis fringilla mollis in vitae odio. Nulla id elit sit amet quam mollis varius ut in lectus. Nam commodo condimentum nisl vitae eleifend. Aliquam consectetur lorem sed mauris volutpat, vitae convallis neque fringilla. Ut pellentesque tellus sapien, quis tincidunt nisl interdum eu. Donec pretium velit elit. Aenean dictum ultrices ornare.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices purus. Donec elementum, nisi at feugiat efficitur, odio ex rhoncus sapien, eu tristique turpis dolor sit amet dolor. Vivamus ut nisl in turpis consectetur blandit non eget dui. Aliquam porttitor orci eu felis ullamcorper facilisis. Sed fermentum vehicula lorem, quis varius nunc facilisis nec. Sed massa leo, rutrum in nulla quis, aliquet aliquam leo. Vivamus eu est ac felis fringilla mollis in vitae odio. Nulla id elit sit amet quam mollis varius ut in lectus. Nam commodo condimentum nisl vitae eleifend. Aliquam consectetur lorem sed mauris volutpat, vitae convallis neque fringilla. Ut pellentesque tellus sapien, quis tincidunt nisl interdum eu. Donec pretium velit elit. Aenean dictum ultrices ornare.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices purus. Donec elementum, nisi at feugiat efficitur, odio ex rhoncus sapien, eu tristique turpis dolor sit amet dolor. Vivamus ut nisl in turpis consectetur blandit non eget dui. Aliquam porttitor orci eu felis ullamcorper facilisis. Sed fermentum vehicula lorem, quis varius nunc facilisis nec. Sed massa leo, rutrum in nulla quis, aliquet aliquam leo. Vivamus eu est ac felis fringilla mollis in vitae odio. Nulla id elit sit amet quam mollis varius ut in lectus. Nam commodo condimentum nisl vitae eleifend. Aliquam consectetur lorem sed mauris volutpat, vitae convallis neque fringilla. Ut pellentesque tellus sapien, quis tincidunt nisl interdum eu. Donec pretium velit elit. Aenean dictum ultrices ornare.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae ultrices purus. Donec elementum, nisi at feugiat efficitur, odio ex rhoncus sapien, eu tristique turpis dolor sit amet dolor. Vivamus ut nisl in turpis consectetur blandit non eget dui. Aliquam porttitor orci eu felis ullamcorper facilisis. Sed fermentum vehicula lorem, quis varius nunc facilisis nec. Sed massa leo, rutrum in nulla quis, aliquet aliquam leo.
