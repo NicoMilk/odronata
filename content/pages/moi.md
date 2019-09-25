@@ -2,7 +2,7 @@
 template: DefaultPage
 slug: wam
 title: Wam
-featuredImage: 'https://ucarecdn.com/b142cd9a-55b7-4b32-acac-7a99d0078f3e/'
+featuredImage: https://ucarecdn.com/b142cd9a-55b7-4b32-acac-7a99d0078f3e/
 subtitle: ''
 meta:
   description: Odronata - Moi

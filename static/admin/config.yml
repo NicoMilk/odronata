@@ -17,7 +17,7 @@ media_library:
 
 collections: # A list of collections the CMS should be able to edit
   - name: 'pages'
-    label: 'Page'
+    label: 'Pages'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: true
@@ -87,11 +87,17 @@ collections: # A list of collections the CMS should be able to edit
               label: Template,
               name: template,
               widget: hidden,
-              default: DefaultPage,
+              default: LegislationPage,
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Titre, name: title, widget: string }
-          - { label: Image, name: featuredImage, widget: image }
+          - {
+              label: Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 2600x2600 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: hidden }
           - { label: Texte section 1, name: section1, widget: markdown }
           - { label: Texte section 2, name: section2, widget: markdown }
@@ -99,7 +105,7 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Texte section 4, name: section4, widget: markdown }
           
       - file: 'content/pages/contact.md'
-        label: 'Contact Page'
+        label: 'Contact'
         name: 'contact-page'
         fields:
           - {
@@ -109,73 +115,22 @@ collections: # A list of collections the CMS should be able to edit
               default: ContactPage,
             }
           - { label: Slug, name: slug, widget: hidden, default: 'contact' }
-          - { label: Title, name: title, widget: string }
+          - { label: Title, name: title, widget: hidden }
           - {
-              label: Featured Image,
+              label: Image,
               name: featuredImage,
               widget: image,
               options:
                 { media_library: { config: { imageShrink: 2600x2600 } } },
             }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - { label: Body, name: body, widget: markdown }
-          - { label: Address, name: address, widget: text }
-          - { label: Phone, name: phone, widget: string }
-          - { label: Email Address, name: email, widget: string }
-          - name: locations
-            label: locations
-            widget: list
-            fields:
-              - {
-                  name: mapLink,
-                  label: mapLink,
-                  widget: string,
-                  required: false,
-                  default: '',
-                }
-              - {
-                  name: lat,
-                  label: latitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
-              - {
-                  name: lng,
-                  label: longitude,
-                  widget: string,
-                  required: false,
-                  delete: false,
-                  default: '',
-                }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
-
+          - { label: Subtitle, name: subtitle, widget: hidden }
+          - { label: Body, name: body, widget: hidden }
+          - { label: Address, name: address, widget: hidden }
+          - { label: Téléphone, name: phone, widget: string }
+          - { label: Adresse email, name: email, widget: string }
+          
       - file: 'content/pages/blog.md'
-        label: 'Blog Page'
+        label: 'Blog'
         name: 'blog-page'
         fields:
           - {
@@ -186,73 +141,11 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: 'blog' }
           - { label: Title, name: title, widget: string }
-          - { label: Featured Image, name: featuredImage, widget: image }
-          - { label: Subtitle, name: subtitle, widget: markdown }
-          - label: 'Meta'
-            required: false
-            name: 'meta'
-            widget: 'object'
-            fields:
-              - { label: Title, name: title, widget: string, required: false }
-              - {
-                  label: Description,
-                  name: description,
-                  widget: text,
-                  required: false,
-                }
-              - {
-                  label: Canonical Link,
-                  name: canonicalLink,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Noindex,
-                  name: noindex,
-                  widget: boolean,
-                  required: false,
-                }
-
-  - name: infoPages
-    label: Info Page
-    editor:
-      preview: true
-    folder: content/infoPages
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    create: true # Allow users to create new documents in this collection
-    fields:
-      - {
-          label: Template,
-          name: template,
-          widget: hidden,
-          default: DefaultPage,
-        }
-      - { label: Slug, name: slug, widget: string }
-      - { label: Title, name: title, widget: string }
-      - { label: Featured Image, name: featuredImage, widget: image }
-      - { label: Body, name: body, widget: markdown }
-      - label: 'Meta'
-        required: false
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
-
+          - { label: Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: hidden }
+          
   - name: posts
-    label: Post
+    label: Articles
     editor:
       preview: true
     folder: content/posts
@@ -266,48 +159,29 @@ collections: # A list of collections the CMS should be able to edit
         widget: 'select'
         options: ['Published', 'Featured', 'Draft']
         default: 'Published'
-      - { label: Date / Order, name: date, widget: date }
+      - { label: Date, name: date, widget: date }
       - {
-          label: Featured Image,
+          label: Image,
           name: featuredImage,
-          widget: image,
+          widget: hidden,
           required: false,
         }
-      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Texte raccourci, name: excerpt, widget: text }
       - { label: Content, name: body, widget: markdown }
       - label: 'Categories'
         name: 'categories'
         widget: 'list'
         required: false
         fields:
-          - label: 'Category'
+          - label: 'Categorie'
             name: 'category'
             widget: 'relation'
             collection: 'postCategories'
             searchFields: ['title']
             valueField: 'title'
-      - label: 'Meta'
-        required: false
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
-
+      
   - name: postCategories
-    label: Post Category
+    label: Catégories d'articles
     editor:
       preview: false
     folder: content/postCategories
@@ -316,35 +190,16 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - { label: Template, name: template, widget: hidden, default: BlogIndex }
       - { label: Title, name: title, widget: string }
-      - { label: Subtitle, name: subtitle, widget: string, required: false }
+      - { label: Subtitle, name: subtitle, widget: hidden, required: false }
       - {
-          label: Featured Image,
+          label: Image,
           name: featuredImage,
           widget: image,
           required: false,
         }
-      - label: 'Meta'
-        required: false
-        name: 'meta'
-        widget: 'object'
-        fields:
-          - { label: Title, name: title, widget: string, required: false }
-          - {
-              label: Description,
-              name: description,
-              widget: text,
-              required: false,
-            }
-          - {
-              label: Canonical Link,
-              name: canonicalLink,
-              widget: string,
-              required: false,
-            }
-          - { label: Noindex, name: noindex, widget: boolean, required: false }
-
+      
   - name: 'settings'
-    label: 'Settings'
+    label: 'Configuration'
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
@@ -353,10 +208,10 @@ collections: # A list of collections the CMS should be able to edit
         label: 'Global Settings'
         name: 'global-settings'
         fields:
-          - { label: Site Title, name: siteTitle, widget: string }
-          - { label: Site Url, name: siteUrl, widget: string, required: false }
+          - { label: Titre du site, name: siteTitle, widget: string }
+          - { label: Url du site, name: siteUrl, widget: string, required: false }
           - {
-              label: Site Description,
+              label: Description du site,
               name: siteDescription,
               widget: text,
               required: false,
