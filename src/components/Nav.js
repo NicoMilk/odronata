@@ -49,8 +49,8 @@ export class Navigation extends Component {
             <Logo />
           </Link>
           <div className="Nav--Links">
-            <NavLink to="/">Présentation</NavLink>
-            <NavLink to="/wam">Wam</NavLink>
+            {/* <NavLink to="/">Présentation</NavLink> */}
+            <NavLink to="/wam">Présentation</NavLink>
             <NavLink to="/legislation/">Législation & Sécurité</NavLink>
             {/* <div
               className={`Nav--Group ${
@@ -84,8 +84,8 @@ export class Navigation extends Component {
                 ))}
               </div>
             </div> */}
-            <NavLink to="/blog/">Blog</NavLink>
-            <NavLink to="/contact/">Contact</NavLink>
+            {/* <NavLink to="/blog/">Blog</NavLink> */}
+            <NavLink className="buttonContact" to="/contact/">Contact</NavLink>
           </div>
           <button
             className="Button-blank Nav--MenuButton"

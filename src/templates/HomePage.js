@@ -45,7 +45,7 @@ export const HomePageTemplate = ({
   <main className="Home">
 
     {/* Temporaire pour Work In Progress */}
-    <div className="ImageGrid">
+    {/* <div className="ImageGrid">
       <div className="ImageWorkInProgress">
       </div>
       <div className="ImageWorkInProgress">
@@ -54,11 +54,11 @@ export const HomePageTemplate = ({
       <div className="Work2">
         <a href="mailto:contact@odronata.com">contact@odronata.com</a>
       </div>
-    </div>
+    </div> */}
     {/* Fin temporaire */}
 
     {/* Temporaire : A decommenter après Work In Progress */}
-    {/* <section className="BackgroundVideo-section section">
+    <section className="BackgroundVideo-section section">
       <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
@@ -124,7 +124,7 @@ export const HomePageTemplate = ({
       <div className="container">
         <Content source={section7} />
       </div>
-    </section> */}
+    </section>
     {/* Fin Temporaire : A decommenter après Work In Progress */}
 
   </main>

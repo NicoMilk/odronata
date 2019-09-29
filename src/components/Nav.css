@@ -46,6 +46,15 @@
   border-bottom-color: transparent;
 }
 
+.buttonContact  {
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  padding: .5rem .9rem;
+  border-radius: 10em;
+}
+
 .NavLink:hover,
 .NavLink.active,
 .NavLink:focus {
