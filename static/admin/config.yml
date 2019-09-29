@@ -75,13 +75,7 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Titre, name: title, widget: string }
-          - {
-              label: Image,
-              name: featuredImage,
-              widget: image,
-              options:
-                { media_library: { config: { imageShrink: 400x400 } } },
-            }
+          - { label: Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: hidden }
           - { label: Texte, name: body, widget: markdown }
       
@@ -93,17 +87,11 @@ collections: # A list of collections the CMS should be able to edit
               label: Template,
               name: template,
               widget: hidden,
-              default: LegislationPage,
+              default: DefaultPage,
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Titre, name: title, widget: string }
-          - {
-              label: Image,
-              name: featuredImage,
-              widget: image,
-              options:
-                { media_library: { config: { imageShrink: 400x400 } } },
-            }
+          - { label: Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: hidden }
           - { label: Texte section 1, name: section1, widget: markdown }
           - { label: Texte section 2, name: section2, widget: markdown }
