@@ -75,7 +75,13 @@ collections: # A list of collections the CMS should be able to edit
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Titre, name: title, widget: string }
-          - { label: Image, name: featuredImage, widget: image }
+          - {
+              label: Image,
+              name: featuredImage,
+              widget: image,
+              options:
+                { media_library: { config: { imageShrink: 400x400 } } },
+            }
           - { label: Subtitle, name: subtitle, widget: hidden }
           - { label: Texte, name: body, widget: markdown }
       
@@ -96,7 +102,7 @@ collections: # A list of collections the CMS should be able to edit
               name: featuredImage,
               widget: image,
               options:
-                { media_library: { config: { imageShrink: 2600x2600 } } },
+                { media_library: { config: { imageShrink: 400x400 } } },
             }
           - { label: Subtitle, name: subtitle, widget: hidden }
           - { label: Texte section 1, name: section1, widget: markdown }
