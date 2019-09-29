@@ -65,7 +65,7 @@ collections: # A list of collections the CMS should be able to edit
           
       - file: 'content/pages/moi.md'
         label: 'Présentation'
-        name: 'presentation-page'
+        name: 'default-page'
         fields:
           - {
               label: Template,
@@ -81,7 +81,7 @@ collections: # A list of collections the CMS should be able to edit
       
       - file: 'content/pages/legislation.md'
         label: 'Législation'
-        name: 'legislation-page'
+        name: 'default-page'
         fields:
           - {
               label: Template,
