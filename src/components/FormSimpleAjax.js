@@ -96,11 +96,10 @@ class Form extends React.Component {
           </div>
           <label className="Form--Label">
             <input
-              className="Form--Input Form--InputText"
+              className="Form--Input"
               type="text"
               placeholder="Téléphone"
               name="phone"
-              required
             />
             <span>Téléphone</span>
           </label>
@@ -113,20 +112,6 @@ class Form extends React.Component {
               required
             />
             <span>Email</span>
-          </label>
-          <label className="Form--Label has-arrow">
-            <select
-              className="Form--Input Form--Select"
-              name="type"
-              defaultValue="Type of Enquiry"
-              required
-            >
-              <option disabled hidden>
-                Votre demande
-              </option>
-              <option>Besoin d'informations</option>
-              <option>Prise de contact</option>
-            </select>
           </label>
           <label className="Form--Label">
             <textarea
