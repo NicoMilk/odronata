@@ -5996,13 +5996,6 @@ gatsby-plugin-sitemap@^2.0.4:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-smoothscroll@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-smoothscroll/-/gatsby-plugin-smoothscroll-1.0.3.tgz#61302d26ae06662b0374b3fb376276918a1145bf"
-  integrity sha512-+lFqDc17i1UkdR9kTWnMh30ffDPjFWGSDXpahWGxbxTmyGxShN7EHg7CGs88wJtLprIHVlx6lA1kk0dQSQm1bw==
-  dependencies:
-    smoothscroll-polyfill "^0.4.4"
-
 gatsby-react-router-scroll@^2.1.11:
   version "2.1.11"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-2.1.11.tgz#d5605632e84be21ba5a8970944bc5a3ece82eeb0"
@@ -13455,11 +13448,6 @@ smooth-scroll@^16.1.0:
   version "16.1.0"
   resolved "https://registry.yarnpkg.com/smooth-scroll/-/smooth-scroll-16.1.0.tgz#c811c63db67215d30847745ba0732feb3291947f"
   integrity sha512-V5b8ekIekZ3xJ6f0sPsLgEbN5YT8gX0Q6yNjZXTKgqjH9dBGadZ0P50fhP0rLRBGifc44qfI3rnWNM+lebhJag==
-
-smoothscroll-polyfill@^0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/smoothscroll-polyfill/-/smoothscroll-polyfill-0.4.4.tgz#3a259131dc6930e6ca80003e1cb03b603b69abf8"
-  integrity sha512-TK5ZA9U5RqCwMpfoMq/l1mrH0JAR7y7KRvOBx0n2869aLxch+gT9GhN3yUfjiw+d/DiF1mKo14+hd62JyMmoBg==
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

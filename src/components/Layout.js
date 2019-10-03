@@ -7,12 +7,12 @@ import Footer from './Footer'
 
 // import GithubCorner from './GithubCorner'
 
-if (typeof window !== "undefined") {
-  // eslint-disable-next-line global-require
-  require("smooth-scroll")('a[href*="#"]', {
-    easing: 'easeInQuad'
-  })
-}
+// if (typeof window !== "undefined") {
+//   // eslint-disable-next-line global-require
+//   require("smooth-scroll")('a[href*="#"]', {
+//     easing: 'easeInQuad'
+//   })
+// }
 
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
