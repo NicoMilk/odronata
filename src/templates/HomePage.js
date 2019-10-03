@@ -47,7 +47,7 @@ export const HomePageTemplate = ({
   <main className="Home">
 
     {/* Temporaire pour Work In Progress */}
-    {/* <div className="ImageGrid">
+    <div className="ImageGrid">
       <div className="ImageWorkInProgress">
       </div>
       <div className="ImageWorkInProgress">
@@ -56,18 +56,12 @@ export const HomePageTemplate = ({
       <div className="Work2">
         <a href="mailto:contact@odronata.com">contact@odronata.com</a>
       </div>
-    </div> */}
+    </div>
     {/* Fin temporaire */}
 
     {/* Temporaire : A decommenter après Work In Progress */}
     
-    <div id="top" className="parallax">
- 
-    {/* <section className="BackgroundVideo-section section">
-      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
-        {video && <source src={video} type="video/mp4" />}
-      </BackgroundVideo>
-    </section> */}
+    {/* <div id="top" className="parallax">
  
       <div id="group1" className="parallax__group">
         <div className="parallax__layer parallax__layer--base">
@@ -105,7 +99,8 @@ export const HomePageTemplate = ({
 
       <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'gauche'} image={'dark'} title={''} section={section7}/>
 
-    </div>
+    </div> */}
+
     {/* <div className="ScrollLink">
       <Link to="/#top">Scroll To My Cool Header</Link>
     </div> */}

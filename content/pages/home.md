@@ -56,7 +56,7 @@ section4: >-
   mattis, eget lobortis libero ullamcorper. Suspendisse accumsan ipsum est.
   Praesent eros massa, varius eu velit quis, dignissim molestie arcu. Sed
   venenatis sed ex at aliquet. Aliquam erat volutpat.
-title5: Et bien dautres possibilités
+title5: Et bien d'autres possibilités
 parallax5: 'https://ucarecdn.com/5d0cb7b7-90d2-4049-91ba-45b53b02359e/'
 section5: >-
   Duis a est tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
