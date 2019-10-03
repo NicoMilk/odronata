@@ -6,7 +6,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: absolute; 
+    z-index: -1;
+    transform:translateZ(-1px) scale(2); */
 }
+
+.foreground {
+    margin-top: auto;
+    margin-bottom: 50px;
+    
+    transform-origin: 0;
+    transform: translateZ(3px) scale(0.625);
+    
+    /* Uncomment the code below to see the difference the scale property makes! */
+    /* transform: translateZ(3px); */
+    /* transform: translateZ(0) scale(1); */
+  }
+  
 
 .parallaxTitle {
     position: relative;
@@ -19,4 +35,155 @@
     text-align: center;
     color: white;
     text-shadow: 1px 1px 1px grey;
+}
+
+/* Parallax base styles
+  --------------------------------------------- */
+
+  .parallax {
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 300px;
+    perspective: 300px;
+  }
+
+  .parallax__group {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--fore {
+    -webkit-transform: translateZ(90px) scale(.7);
+    transform: translateZ(90px) scale(.7);
+    z-index: 1;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    z-index: 4;
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-300px) scale(2);
+    transform: translateZ(-300px) scale(2);
+    z-index: 3;
+  }
+
+  .parallax__layer--deep {
+    -webkit-transform: translateZ(-600px) scale(3);
+    transform: translateZ(-600px) scale(3);
+    z-index: 2;
+  }
+
+
+  /* demo styles
+  --------------------------------------------- */
+/* 
+  body, html {
+    overflow: hidden;
+  }
+
+  body {
+    font: 100% / 1.5 Arial;
+  } */
+
+  * {
+    margin:0;
+    padding:0;
+  }
+
+  .parallax {
+    font-size: 200%;
+  }
+
+   /* centre the content in the parallax layers */
+  .title {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .flexi{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .pave1 {
+    width: 50%;
+    font-size: 0.6em;
+    padding: 10px;
+  }
+  
+  .pave2 {
+    width: 50%;
+    background: pink
+  }
+
+ /* style the groups
+  --------------------------------------------- */
+
+  #group1 {
+    z-index: 5; /* slide over group 2 */
+  }
+  #group1 .parallax__layer--base {
+    background: transparent;
+  }
+
+  #group2 {
+    z-index: 5; /* slide under groups 1 and 3 */
+  }
+  #group2 .parallax__layer--base {
+    background-size: cover;
+  }
+
+  #group3{
+    z-index: 3; /* slide under groups 1 and 3 */
+  }
+  #group3 .parallax__layer--back {
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 1200px) {
+    
+    #group2 .parallax__layer--base {
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-height: 70vh;
+    }
+
+    #group3 .parallax__layer--back {
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-height: 100vh;
+    }
+
+    .pave1 {
+      width: 100%;
+      font-size: 0.4em;
+    }
+    
+    .pave2 {
+      width: 100%;
+      height: 200px;
+    }
   }
