@@ -37,8 +37,8 @@ html {
   font-size: 62.5%;
   min-height: 100%;
   background: var(--lightGrey);
-  overflow: hidden;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* overflow-y: auto; */
 }
 
 body {
@@ -53,6 +53,11 @@ body {
   letter-spacing: 0.01em;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* overflow-y: auto; */
+  /* -webkit-perspective: 300px;
+  perspective: 300px; */
 }
 
 a {

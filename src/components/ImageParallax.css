@@ -41,7 +41,7 @@
   --------------------------------------------- */
 
   .parallax {
-    height: 500px; /* fallback for older browsers */
+    height: 500px;
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -57,9 +57,24 @@
     transform-style: preserve-3d;
   }
 
+  .parallax__group1 {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 50vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  .parallax__group2 {
+    position: relative;
+    height: 500px; /* fallback for older browsers */
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
   .parallax__layer {
     position: absolute;
-    height: 100vh;
     top: 0;
     left: 0;
     right: 0;
@@ -90,25 +105,9 @@
     z-index: 2;
   }
 
-
-  /* demo styles
-  --------------------------------------------- */
-/* 
-  body, html {
-    overflow: hidden;
-  }
-
-  body {
-    font: 100% / 1.5 Arial;
-  } */
-
   * {
     margin:0;
     padding:0;
-  }
-
-  .parallax {
-    font-size: 200%;
   }
 
    /* centre the content in the parallax layers */
@@ -117,6 +116,17 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    font-size: 1.6em;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .title2 {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 1.6em;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
@@ -127,16 +137,27 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
+  .flexi2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+  }
   
   .pave1 {
-    width: 50%;
-    font-size: 0.6em;
+    width: 40%;
+    font-size: .7em;
     padding: 10px;
   }
   
   .pave2 {
-    width: 50%;
-    background: pink
+    width: 45%;
+    height: 500px;
+    margin: 0 20px;
+    /* border: 1px solid var(--odronataLight); */
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
  /* style the groups
@@ -163,27 +184,104 @@
     background-size: cover;
   }
 
-  @media screen and (max-width: 1200px) {
-    
+  @media screen and (min-width: 1201px) {
+    .parallax__group1 {
+      height: 80vh;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .parallax__group1 {
+      height: 60vh;
+    }
+    .pave1 {
+      width: 100%;
+      font-size: 0.6em;
+    }
+    .pave2 {
+      width: 100%;
+      height: 550px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .pave1 {
+      width: 100%;
+      font-size: 0.6em;
+    }
+    .pave2 {
+      width: 100%;
+      height: 450px;
+    }
+  }
+
+  @media screen and (min-width: 512px) and (max-width: 767px) {
+   
     #group2 .parallax__layer--base {
         background-repeat: no-repeat;
         background-size: contain;
         max-height: 70vh;
     }
-
     #group3 .parallax__layer--back {
       background-repeat: no-repeat;
       background-size: contain;
-      min-height: 100vh;
     }
+    .pave1 {
+      width: 100%;
+      font-size: 0.6em;
+    }
+    .pave2 {
+      width: 100%;
+      height: 300px;
+    }
+  }
 
+  @media screen and (min-width: 321px) and (max-width: 511px) {
+    #group2 .parallax__layer--base {
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-height: 85vh;
+    }
+    #group3 .parallax__layer--back {
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .title2 {
+      top:30%;
+    }
     .pave1 {
       width: 100%;
       font-size: 0.4em;
     }
-    
     .pave2 {
       width: 100%;
-      height: 200px;
+      height: 250px;
     }
   }
+
+  @media screen and (max-width: 320px) {
+    #group2 .parallax__layer--base {
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-height: 85vh;
+    }
+    #group3 .parallax__layer--back {
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+    .title2 {
+      top:30%;
+    }
+    .pave1 {
+      width: 100%;
+      font-size: 0.4em;
+    }
+    .pave2 {
+      width: 100%;
+      height: 150px;
+    }
+  }
+
+  
+
+  

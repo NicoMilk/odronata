@@ -8,3 +8,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.Logo2 {
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50rem;
+  width: 70rem;
+  align-items: center;
+  justify-content: center;
+}
