@@ -9,6 +9,7 @@ video: 'https://ucarecdn.com/cd44011d-78f9-4639-b9e4-c252a90cc0da/'
 videoPoster: 'https://ucarecdn.com/6a35fe34-ae7a-4997-9f67-e793e763fd75/'
 title1: Prises de vues
 parallax1: 'https://ucarecdn.com/49bebd54-d3ed-4524-81f7-620a6b09185a/'
+illustration1: 'https://ucarecdn.com/160e6e2d-e79c-463f-a9b6-0206cd6b3966/'
 section1: >-
   A sem vel nec sodales mi vivamus senectus sed potenti a parturient nascetur
   tincidunt nisi pulvinar rhoncus a. Risus imperdiet taciti suspendisse facilisi
