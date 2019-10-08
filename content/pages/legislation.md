@@ -2,7 +2,7 @@
 template: LegislationPage
 slug: legislation
 title: Législation & Sécurité
-featuredImage: 'https://ucarecdn.com/e3ccb33c-7084-46dc-8bac-390f10881d15/'
+featuredImage: https://ucarecdn.com/e3ccb33c-7084-46dc-8bac-390f10881d15/
 subtitle: ''
 title1: 'Chapitre 1'
 section1: >-
