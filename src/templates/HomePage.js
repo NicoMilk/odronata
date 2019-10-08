@@ -7,10 +7,10 @@ import Layout from '../components/Layout'
 import ImageParallax from '../components/ImageParallax'
 import BackgroundVideo from '../components/BackgroundVideo'
 import Image from '../components/Image'
-import { Link } from "gatsby"
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
-import ButtonScroll from '../components/ButtonScroll'
+// import { Link } from "gatsby"
+// import Nav from '../components/Nav'
+// import Footer from '../components/Footer'
+// import ButtonScroll from '../components/ButtonScroll'
 
 // import PostCard from '../components/PostCard'
 
@@ -58,7 +58,7 @@ export const HomePageTemplate = ({
   <main id="top">
 
     {/* Temporaire pour Work In Progress */}
-    {/* <div className="ImageGrid">
+    <div className="ImageGrid">
       <div className="ImageWorkInProgress">
       </div>
       <div className="ImageWorkInProgress">
@@ -67,12 +67,12 @@ export const HomePageTemplate = ({
       <div className="Work2">
         <a href="mailto:contact@odronata.com">contact@odronata.com</a>
       </div>
-    </div> */}
+    </div>
     {/* Fin temporaire */}
 
     {/* Temporaire : A decommenter après Work In Progress */}
     
-    <div className="parallax">
+    {/* <div className="parallax">
 
       <div id="group1" className="parallax__group">
         <div className="parallax__layer parallax__layer--base">
@@ -112,11 +112,9 @@ export const HomePageTemplate = ({
       <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'gauche'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section7} illustration={illustration7}/>
      
      <Footer />
-
-     {/* <ButtonScroll /> */}
   
     </div>
-    
+     */}
     {/* Fin Temporaire : A decommenter après Work In Progress */}
   </main>
  
