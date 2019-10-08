@@ -81,7 +81,8 @@ section6: >-
   primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent non
   consectetur nulla. Donec eu magna dignissim eros maximus rhoncus
 title7: Matériel
-parallax7: 'https://ucarecdn.com/5d0cb7b7-90d2-4049-91ba-45b53b02359e/'
+parallax7: >-
+  https://ucarecdn.com/5d0cb7b7-90d2-4049-91ba-45b53b02359e/-/crop/4460x2250/0,603/-/preview/
 illustration7: 'https://ucarecdn.com/f40e2e70-353a-451e-9e7c-8a571c4e14bf/'
 section7: >-
   Duis a est tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
