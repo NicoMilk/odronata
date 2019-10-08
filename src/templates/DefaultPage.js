@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 // import SVGIcon from '../components/SVGIcon'
 
 // Export Template for use in CMS preview
@@ -14,6 +16,7 @@ export const DefaultPageTemplate = ({
   body
 }) => (
   <main className="DefaultPage">
+     {/* <Nav /> */}
     <PageHeader
       title={title}
       subtitle={subtitle}
@@ -26,6 +29,7 @@ export const DefaultPageTemplate = ({
         {/* <SVGIcon src="/images/calendar.svg" /> */}
       </div>
     </section>
+    {/* <Footer /> */}
   </main>
 )
 
@@ -34,7 +38,9 @@ const DefaultPage = ({ data: { page } }) => (
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
+    <Nav />
     <DefaultPageTemplate {...page.frontmatter} body={page.html} />
+    <Footer />
   </Layout>
 )
 export default DefaultPage

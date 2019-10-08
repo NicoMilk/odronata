@@ -7,9 +7,12 @@ import Layout from '../components/Layout'
 import ImageParallax from '../components/ImageParallax'
 import BackgroundVideo from '../components/BackgroundVideo'
 import Image from '../components/Image'
+// import { Link } from "gatsby"
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+// import ButtonScroll from '../components/ButtonScroll'
 
 // import PostCard from '../components/PostCard'
-import './HomePage.css'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ 
@@ -33,6 +36,13 @@ export const HomePageTemplate = ({
   parallax5,
   parallax6,
   parallax7,
+  illustration1,
+  illustration2,
+  illustration3,
+  illustration4,
+  illustration5,
+  illustration6,
+  illustration7,
   title1,
   title2,
   title3,
@@ -42,10 +52,13 @@ export const HomePageTemplate = ({
   title7,
   body 
   }) => (
-  <main className="Home">
+
+  
+  
+  <main id="top">
 
     {/* Temporaire pour Work In Progress */}
-    <div className="ImageGrid">
+    {/* <div className="ImageGrid">
       <div className="ImageWorkInProgress">
       </div>
       <div className="ImageWorkInProgress">
@@ -54,80 +67,61 @@ export const HomePageTemplate = ({
       <div className="Work2">
         <a href="mailto:contact@odronata.com">contact@odronata.com</a>
       </div>
-    </div>
+    </div> */}
     {/* Fin temporaire */}
 
     {/* Temporaire : A decommenter après Work In Progress */}
-    {/* <section className="BackgroundVideo-section section">
-      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
-        {video && <source src={video} type="video/mp4" />}
-      </BackgroundVideo>
-    </section>
+    
+    <div className="parallax">
 
-    <section className="section">
-      <div className="container">
-        <Content source={body} /> 
+      <div id="group1" className="parallax__group">
+        <div className="parallax__layer parallax__layer--base">
+          <Nav />
+          <BackgroundVideo poster={videoPoster} videoTitle={videoTitle}>
+            {video && <source src={video} type="video/mp4" />}
+          </BackgroundVideo>
+        </div>
       </div>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--back'} group={'group3'} image={parallax1} parallax_group={'parallax__group1'} title={title1}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'gauche'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section1} illustration={illustration1}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--back'} group={'group3'} image={parallax2} parallax_group={'parallax__group1'} title={title2}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'droite'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section2} illustration={illustration2}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--back'} group={'group3'} image={parallax3} parallax_group={'parallax__group1'} title={title3}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'gauche'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section3} illustration={illustration3}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--back'} group={'group3'} image={parallax4} parallax_group={'parallax__group1'} title={title4}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'droite'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section4} illustration={illustration4}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--back'} group={'group3'} image={parallax5} parallax_group={'parallax__group1'} title={title5}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'gauche'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section5} illustration={illustration5}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--back'} group={'group3'} image={parallax6} parallax_group={'parallax__group1'} title={title6}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'droite'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section6} illustration={illustration6}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--back'} group={'group3'} image={parallax7} parallax_group={'parallax__group1'} title={title7}/>
+
+      <ImageParallax parallax={'parallax__layer parallax__layer--base'} group={'group2'} pave={'gauche'} parallax_group={'parallax__group2'} image={'dark'} title={''} section={section7} illustration={illustration7}/>
+     
+     <Footer />
+
+     <section id="section09" class="demo bounce">
+     <span></span><span></span><span></span>&nbsp;
     </section>
-
-    <ImageParallax image={parallax1} title={title1}/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section1} />
-      </div>
-    </section>
-
-    <ImageParallax image={parallax2} title={title2}/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section2} />
-      </div>
-    </section>
-
-    <ImageParallax image={parallax3} title={title3}/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section3} />
-      </div>
-    </section>
-
-    <ImageParallax image={parallax4} title={title4}/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section4} />
-      </div>
-    </section>
-
-    <ImageParallax image={parallax5} title={title5}/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section5} />
-      </div>
-    </section>
-
-    <ImageParallax image={parallax6} title={title6}/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section6} />
-      </div>
-    </section>
-
-    <ImageParallax image={parallax7} title={title7}/>
-
-    <section className="section">
-      <div className="container">
-        <Content source={section7} />
-      </div>
-    </section> */}
+  
+    </div>
+    
     {/* Fin Temporaire : A decommenter après Work In Progress */}
-
   </main>
+ 
 )
 
 // Export Default HomePage for front-end
@@ -176,6 +170,13 @@ export const pageQuery = graphql`
         title6
         parallax7
         title7
+        illustration1
+        illustration2
+        illustration3
+        illustration4
+        illustration5
+        illustration6
+        illustration7
       }
     }
   }

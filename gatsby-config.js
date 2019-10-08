@@ -8,6 +8,15 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
+    'gatsby-plugin-smoothscroll',
+    {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        /*id: 'GTM-add_your_tag_here',*/
+        id: 'GTM-KVZCSLS',
+        includeInDevelopment: false
+      }
+    },
     {
       resolve: 'gatsby-plugin-offline',
       options: {

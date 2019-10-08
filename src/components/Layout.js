@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
 import Footer from './Footer'
+
 // import GithubCorner from './GithubCorner'
 
 import 'modern-normalize/modern-normalize.css'
@@ -51,6 +52,7 @@ export default ({ children, meta, title }) => {
           }
 
         return (
+          
           <Fragment>
             <Helmet
               defaultTitle={siteTitle}
@@ -77,12 +79,13 @@ export default ({ children, meta, title }) => {
             {/* <GithubCorner url="https://github.com/thriveweb/yellowcake" /> */}
 
             {/* Temporaire : A decommenter après fin WorkInProgress */}
-            {/* <Nav subNav={subNav} /> */}
+              {/* <Nav subNav={subNav} /> */}
 
-            <Fragment>{children}</Fragment>
+              <Fragment>{children}</Fragment>
 
-            {/* Temporaire : A decommenter après fin WorkInProgress */}
-            {/* <Footer /> */}
+              {/* Temporaire : A decommenter après fin WorkInProgress */}
+              {/* <Footer /> */}
+              
           </Fragment>
         )
       }}

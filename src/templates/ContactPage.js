@@ -7,6 +7,9 @@ import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
 // import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
+
 import './ContactPage.css'
 
 // Export Template for use in CMS preview
@@ -21,6 +24,8 @@ export const ContactPageTemplate = ({
   locations
 }) => (
   <main className="Contact">
+    <Nav />
+
     <PageHeader
       title={title}
       subtitle={subtitle}
@@ -63,6 +68,7 @@ export const ContactPageTemplate = ({
     </section>
 
     {/* <GoogleMap locations={locations} /> */}
+    <Footer />
   </main>
 )
 

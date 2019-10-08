@@ -4,7 +4,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid var(--lightGrey);
+  /* border-bottom: 1px solid var(--lightGrey); */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
@@ -44,6 +44,15 @@
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
+}
+
+.buttonContact  {
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 2px solid var(--primary);
+  padding: .5rem .9rem;
+  border-radius: 10em;
 }
 
 .NavLink:hover,
