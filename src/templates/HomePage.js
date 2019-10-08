@@ -113,7 +113,7 @@ export const HomePageTemplate = ({
      
      <Footer />
 
-     <section id="section09" class="demo">
+     <section id="section09" class="demo bounce">
      <span></span><span></span><span></span>&nbsp;
     </section>
   
