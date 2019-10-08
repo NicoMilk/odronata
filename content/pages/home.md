@@ -21,7 +21,7 @@ section1: >-
   primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent non
   consectetur nulla. Donec eu magna dignissim eros maximus rhoncus
 title2: Mapping et photogrammétrie
-parallax2: 'https://ucarecdn.com/b731c1d9-6742-48f8-aba4-a618d9f258e1/-/resize/1920x/'
+parallax2: 'https://ucarecdn.com/62ab0218-b81b-4bde-b245-34596a3991a2/'
 illustration2: 'https://ucarecdn.com/37d775dd-325c-4639-a4d4-13c9f52dd988/'
 section2: >-
   Duis a est tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -45,7 +45,7 @@ section3: >-
   primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent non
   consectetur nulla. Donec eu magna dignissim eros maximus rhoncus
 title4: Evenementiel
-parallax4: 'https://ucarecdn.com/421b6ac9-0068-4134-891b-f9f2ac22bcdf/'
+parallax4: 'https://ucarecdn.com/53b19446-9cf4-406a-af31-362f5e17caf5/'
 illustration4: 'https://ucarecdn.com/50ce8b83-fb66-45ea-9744-4c953de4053a/'
 section4: >-
   Duis a est tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
