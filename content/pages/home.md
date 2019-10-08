@@ -9,7 +9,7 @@ video: 'https://ucarecdn.com/cd44011d-78f9-4639-b9e4-c252a90cc0da/'
 videoPoster: 'https://ucarecdn.com/6a35fe34-ae7a-4997-9f67-e793e763fd75/'
 title1: Prises de vues
 parallax1: 'https://ucarecdn.com/49bebd54-d3ed-4524-81f7-620a6b09185a/'
-illustration1: 'https://ucarecdn.com/160e6e2d-e79c-463f-a9b6-0206cd6b3966/'
+illustration1: 'https://ucarecdn.com/d0276dfa-09fb-4483-8395-9418f769a76a/'
 section1: >-
   Duis a est tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus
