@@ -6,7 +6,7 @@ featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
 subtitle: Drone Application(s)
 videoTitle: Odronata
 video: 'https://ucarecdn.com/cd44011d-78f9-4639-b9e4-c252a90cc0da/'
-videoPoster: 'https://ucarecdn.com/6a35fe34-ae7a-4997-9f67-e793e763fd75/'
+videoPoster: 'https://ucarecdn.com/a2d6f6b4-99c9-44ce-b71a-2758b5c065a0/'
 title1: Prise de vues
 parallax1: >-
   https://ucarecdn.com/39f7e118-7b65-468e-94d5-68a09bad6263/-/preview/-/rotate/270/
