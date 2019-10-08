@@ -43,31 +43,31 @@ collections: # A list of collections the CMS should be able to edit
           - { label: Texte intro, name: body, widget: markdown }
           - { label: Titre section 1, name: title1, widget: string }
           - { label: Image parallax 1, name: parallax1, widget: image }
-          - { label: Image illustration 1, name: illustration1, widget: image, required: false }
+          - { label: Image illustration 1, name: illustration1, widget: file, required: false }
           - { label: Texte section 1, name: section1, widget: markdown }
           - { label: Titre section 2, name: title2, widget: string }
           - { label: Image parallax 2, name: parallax2, widget: image }
-          - { label: Image illustration 2, name: illustration2, widget: image, required: false }
+          - { label: Image illustration 2, name: illustration2, widget: file, required: false }
           - { label: Texte section 2, name: section2, widget: markdown }
           - { label: Titre section 3, name: title3, widget: string }
           - { label: Image parallax 3, name: parallax3, widget: image }
-          - { label: Image illustration 3, name: illustration3, widget: image, required: false }
+          - { label: Image illustration 3, name: illustration3, widget: file, required: false }
           - { label: Texte section 3, name: section3, widget: markdown }
           - { label: Titre section 4, name: title4, widget: string }
           - { label: Image parallax 4, name: parallax4, widget: image }
-          - { label: Image illustration 4, name: illustration4, widget: image, required: false }
+          - { label: Image illustration 4, name: illustration4, widget: file, required: false }
           - { label: Texte section 4, name: section4, widget: markdown }
           - { label: Titre section 5, name: title5, widget: string }
           - { label: Image parallax 5, name: parallax5, widget: image }
-          - { label: Image illustration 5, name: illustration5, widget: image, required: false }
+          - { label: Image illustration 5, name: illustration5, widget: file, required: false }
           - { label: Texte section 5, name: section5, widget: markdown }
           - { label: Titre section 6, name: title6, widget: string }
           - { label: Image parallax 6, name: parallax6, widget: image }
-          - { label: Image illustration 6, name: illustration6, widget: image, required: false }
+          - { label: Image illustration 6, name: illustration6, widget: file, required: false }
           - { label: Texte section 6, name: section6, widget: markdown }
           - { label: Titre section 7, name: title7, widget: string }
           - { label: Image parallax 7, name: parallax7, widget: image }
-          - { label: Image illustration 7, name: illustration7, widget: image, required: false }
+          - { label: Image illustration 7, name: illustration7, widget: file, required: false }
           - { label: Texte section 7, name: section7, widget: markdown }
           
       - file: 'content/pages/moi.md'
@@ -88,22 +88,30 @@ collections: # A list of collections the CMS should be able to edit
       
       - file: 'content/pages/legislation.md'
         label: 'Législation'
-        name: 'default-page'
+        name: 'legislation-page'
         fields:
           - {
               label: Template,
               name: template,
               widget: hidden,
-              default: DefaultPage,
+              default: LegislationPage,
             }
           - { label: Slug, name: slug, widget: hidden, default: '' }
           - { label: Titre, name: title, widget: string }
           - { label: Image, name: featuredImage, widget: image }
           - { label: Subtitle, name: subtitle, widget: hidden }
+          - { label: Titre 1, name: title1, widget: string }
           - { label: Texte section 1, name: section1, widget: markdown }
+          - { label: Image illustration 1, name: illustration1, widget: file }
+          - { label: Titre 2, name: title2, widget: string }
           - { label: Texte section 2, name: section2, widget: markdown }
+          - { label: Image illustration 2, name: illustration2, widget: file }
+          - { label: Titre 3, name: title3, widget: string }
           - { label: Texte section 3, name: section3, widget: markdown }
+          - { label: Image illustration 3, name: illustration3, widget: file }
+          - { label: Titre 4, name: title4, widget: string }
           - { label: Texte section 4, name: section4, widget: markdown }
+          - { label: Image illustration 4, name: illustration4, widget: file }
           
       - file: 'content/pages/contact.md'
         label: 'Contact'
