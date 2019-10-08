@@ -58,7 +58,7 @@ export const HomePageTemplate = ({
   <main id="top">
 
     {/* Temporaire pour Work In Progress */}
-    {/* <div className="ImageGrid">
+    <div className="ImageGrid">
       <div className="ImageWorkInProgress">
       </div>
       <div className="ImageWorkInProgress">
@@ -67,12 +67,12 @@ export const HomePageTemplate = ({
       <div className="Work2">
         <a href="mailto:contact@odronata.com">contact@odronata.com</a>
       </div>
-    </div> */}
+    </div>
     {/* Fin temporaire */}
 
     {/* Temporaire : A decommenter après Work In Progress */}
     
-    <div className="parallax">
+    {/* <div className="parallax">
 
       <div id="group1" className="parallax__group">
         <div className="parallax__layer parallax__layer--base">
@@ -117,7 +117,7 @@ export const HomePageTemplate = ({
      <span></span><span></span><span></span>&nbsp;
     </section>
   
-    </div>
+    </div> */}
     
     {/* Fin Temporaire : A decommenter après Work In Progress */}
   </main>
