@@ -96,10 +96,11 @@ class Form extends React.Component {
           </div>
           <label className="Form--Label">
             <input
-              className="Form--Input"
+              className="Form--Input Form--InputText"
               type="text"
               placeholder="Téléphone"
               name="phone"
+              required
             />
             <span>Téléphone</span>
           </label>
